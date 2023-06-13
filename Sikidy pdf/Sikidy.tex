@@ -1,0 +1,531 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[top=1 cm, bottom=2 cm, left=2 cm, right=2 cm]{geometry}
+\usepackage{amsmath}
+
+\title{Sikidy}
+\author{RALAIKOTO Mamitiana Angelo}
+\begin{document}
+
+\maketitle
+\section{Définition}
+Le «Sikidy», est un moyen de divination Malagasy qui répond à la question des problèmes journalier.\newline
+
+\textbf{Origine:} il est d’origine arabe, donné par les anges de la même façon que les 10 commandements ont été donnés à Moïse, dans le but de facilité le quotidien des hommes.
+
+\section{Fonctionnement}
+\begin{description}
+\item[-Étape 1:]On pose la question.
+\item[-Étape 2:]On génère ce qu’on appelle la «mère du sikidy».
+\item[-Étape 3:]On génère les «8 filles du sikidy».
+\end{description}
+
+\subsection{Mère du sikidy}
+La «mère du Sikidy» est composé de \textbf{«16 figures»} dont chaque figure possède une signification.
+
+\subsubsection{Les figures}
+les figures sont des vecteurs colonnes à 4 éléments, dont les éléments sont soit «1» soit «2». 
+Exemples:
+\[
+\begin{pmatrix}
+1  \\
+2  \\
+1  \\
+2
+\end{pmatrix}
+\]
+
+Il'y a 16 permutation possible pour former un vecteur colonne à 4 éléments.
+
+\subsubsection{Listes des 16 figures}
+$
+\begin{pmatrix}
+2  \\
+2  \\
+2  \\
+2
+\end{pmatrix}
+$Nom: Asombola; Signification: Belle, pleine, Riche \newline \newline \newline 
+$
+\begin{pmatrix}
+1  \\
+1  \\
+1  \\
+1
+\end{pmatrix}
+$Nom: Taraiky; Signification: retard, courte, petite, minuscule \newline \newline \newline 
+$
+\begin{pmatrix}
+1  \\
+1  \\
+2  \\
+2
+\end{pmatrix}
+$Nom: Alahasaty; Signification: Combat, Militaire, guerre, Conflit \newline \newline \newline
+$
+\begin{pmatrix}
+2  \\
+1  \\
+2  \\
+2
+\end{pmatrix}
+$Nom: Alaimora; Signification: Facile, Douce, Fragile \newline \newline \newline
+$
+\begin{pmatrix}
+2  \\
+1  \\
+1  \\
+1
+\end{pmatrix}
+$Nom: Alakaosy; Signification: Fer, Dure, Forte, Amer \newline \newline \newline
+$
+\begin{pmatrix}
+1  \\
+2  \\
+1  \\
+1
+\end{pmatrix}
+$Nom: Alakarabo; Signification: Sens caché, Productivité, Sexualité \newline \newline \newline
+$
+\begin{pmatrix}
+1  \\
+1  \\
+2  \\
+1
+\end{pmatrix}
+$Nom: Alimizana; Signification: Comparaison, Indécision, Balancement\newline \newline \newline
+$
+\begin{pmatrix}
+1 \\
+2  \\
+2  \\
+1
+\end{pmatrix}
+$Nom: Alokola; Signification: Objet gonflante, Difficulté, Doute \newline \newline \newline
+$
+\begin{pmatrix}
+2  \\
+1  \\
+1  \\
+2
+\end{pmatrix}
+$Nom: Alatsimay; Signification: Peur, Double signification, Incomplète \newline \newline \newline
+$
+\begin{pmatrix}
+2  \\
+2  \\
+2  \\
+1
+\end{pmatrix}
+$Nom: Alikisy; Signification: Sombre, Handicapée \newline \newline \newline
+$
+\begin{pmatrix}
+2  \\
+2  \\
+1  \\
+1
+\end{pmatrix}
+$Nom: Adabarà; Signification: Belle, Populaire, Bienvenue, Vertueux  \newline \newline    \newline
+$
+\begin{pmatrix}
+1  \\
+1  \\
+1  \\
+2
+\end{pmatrix}
+$Nom: Karija; Signification: Enfantin, Sanguinaire, Pointue  \newline \newline    \newline
+$
+\begin{pmatrix}
+2  \\
+2  \\
+1  \\
+2
+\end{pmatrix}
+$Nom: Alibiavotra; Signification: Avortement, Enlèvement, Déplacement.  \newline \newline \newline
+$
+\begin{pmatrix}
+1  \\
+2  \\
+1  \\
+2
+\end{pmatrix}
+$Nom: Adalo; Signification: Malheureux, Larmes, pleure  \newline \newline \newline
+$
+\begin{pmatrix}
+2  \\
+1  \\
+2  \\
+1
+\end{pmatrix}
+$Nom: Alohotsy; Signification: Blanche, Lumineuse, brillante  \newline \newline \newline
+$
+\begin{pmatrix}
+1  \\
+2  \\
+2  \\
+2
+\end{pmatrix}
+$Nom: Adabarà; Signification: Vivante, Ensoleillé, Jour, Puissant  \newline \newline    \newline
+
+\subsubsection{Formation de la Mère}
+La mère d'un sikidy est composé de 4 figures. Donc, Cette mère peut être représenter sous forme d'une matrice de taille $4 \times 4$:
+\[
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} \\
+a_{21} & a_{22} & a_{23} & a_{24} \\
+a_{31} & a_{32} & a_{33} & a_{34} \\
+a_{41} & a_{42} & a_{43} & a_{44}
+\end{pmatrix}
+\]
+
+dont chaque colonne de cette matrice possède un "NOM", la quatrième colonne s' appelle "TALE: cette colonne représente le consultant(l'homme qui consulte le Sikidy)"
+ici il est donc représenter par:
+\[
+\begin{pmatrix}
+ a_{14} \\
+ a_{24} \\
+ a_{34} \\
+ a_{44}
+\end{pmatrix}
+\]
+
+la troisième colonne s'appelle "MALY: qui représente la CHANCE en général, la caractère subconsciente(ou intuitive)"ici il est représenter par:
+
+\[
+\begin{pmatrix}
+a_{13} \\
+a_{23} \\
+a_{33} \\
+a_{43}
+\end{pmatrix}
+\]
+
+la deuxième colonne s'appelle "FAHATELO: un homme qui n'est pas TALE" ici il est représenter par:
+\[
+\begin{pmatrix}
+a_{12} \\
+a_{22} \\
+a_{32} \\
+a_{42}
+\end{pmatrix}
+\]
+
+et la première colonne s'appelle "BILADY: qui répresente un LIEU" ici il est représenter par:
+\[
+\begin{pmatrix}
+a_{11} \\
+a_{21} \\
+a_{31} \\
+a_{41}
+\end{pmatrix}
+\]
+
+\textbf{\textit{Mis en place de TALE:}} On tire au hasard un nombre entre "1 à 400" si le nombre tiré est pair on met comme première élément du TALE le chiffre "2" sinon on met "1", et on procède de la même façon pour les éléments restant. Puis, appliquer ce même méthode pour mettre en place MALY, FAHATELO et BILADY.\newline
+\textit{Remarque:} La création de la mère devrait être dans l'ordre suivante: on commence par formé TALE, ensuite MALY, après FAHATELO et enfin BILADY  
+
+\subsubsection{Description de la mère}
+
+soit une mère de Sikidy:
+
+\[
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} \\
+a_{21} & a_{22} & a_{23} & a_{24} \\
+a_{31} & a_{32} & a_{33} & a_{34} \\
+a_{41} & a_{42} & a_{43} & a_{44}
+\end{pmatrix}
+\]
+
+La quatrième colonne défini par:\newline
+$
+\begin{pmatrix}
+ a_{14} \\
+ a_{24} \\
+ a_{34} \\
+ a_{44}
+\end{pmatrix}
+$: est appelé TALE \newline
+
+La troisième colonne défini par: \newline
+
+$
+\begin{pmatrix}
+a_{13} \\
+a_{23} \\
+a_{33} \\
+a_{43}
+\end{pmatrix}
+$: est appelé MALY \newline
+
+La deuxième colonne défini par:\newline
+$
+\begin{pmatrix}
+a_{12} \\
+a_{22} \\
+a_{32} \\
+a_{42}
+\end{pmatrix}
+$: est appelé FAHATELO \newline
+
+La première colonne défini par: \newline
+
+$
+\begin{pmatrix}
+a_{11} \\
+a_{21} \\
+a_{31} \\
+a_{41}
+\end{pmatrix}
+$: est appelé BILADY \newline
+
+La première ligne défini par: \newline
+$ \begin{pmatrix}
+a_{11} & a_{12} & a_{13} & a_{14}
+\end{pmatrix} $: est appelé FIANAHA(Signification: Famille, Enfant), et qui se lit de gauche vers la droite \newline
+\textbf{Exemple:} $(1 2 1 2)$ si on le lit de gauche à droite, on obtient:$\begin{pmatrix}
+2 \\
+1 \\
+2 \\
+1
+\end{pmatrix}$: Alohotsy\newline
+
+La deuxième ligne défini par:\newline
+$ \begin{pmatrix}
+a_{21} & a_{22} & a_{23} & a_{24}
+\end{pmatrix} $: est appelé ABILY(Signification: Amour, Animal)\newline
+
+La troisième ligne défini par:\newline
+$ \begin{pmatrix}
+a_{31} & a_{32} & a_{33} & a_{34}
+\end{pmatrix} $: est appelé ALISAY(Signification: Femme autre que TALE)\newline
+
+Et la quatrième ligne défini par:\newline
+$ \begin{pmatrix}
+a_{41} & a_{42} & a_{43} & a_{44}
+\end{pmatrix} $: est appelé FAHAVALO(Signification: Problème, ennemi)\newline
+
+\subsection{Les 8 filles du Sikidy}
+
+Les 8 filles du sikidy est obtenue, en faisant une simple opération en utilisant la mère du sikidy. Les 8 filles est sous forme d'une matrice $ 4 \times 8 $:
+\[
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} & a_{15} & a_{16} & a_{17} & a_{18} \\
+a_{21} & a_{22} & a_{23} & a_{24} & a_{25} & a_{26} & a_{27} & a_{28} \\
+a_{31} & a_{32} & a_{33} & a_{34} & a_{35} & a_{36} & a_{37} & a_{38} \\
+a_{41} & a_{42} & a_{43} & a_{44} & a_{45} & a_{46} & a_{47} & a_{48} 
+\end{pmatrix}
+\]
+
+Chaque colonne de ce matrice possède un nom et une signification:\newline
+La première colonne s'appelle FAHASIVY(Signification: Ange, Fantome ou démon):
+\[
+\begin{pmatrix}
+a_{11}\\
+a_{21}\\
+a_{31}\\
+a_{41}
+\end{pmatrix}
+\] 
+La deuxième colonne s'appelle OMBIASA(Signification: Guérisseur, devin):
+
+\[
+\begin{pmatrix}
+a_{12}\\
+a_{22}\\
+a_{32}\\
+a_{42}
+\end{pmatrix}
+\] 
+
+La troisième colonne s'appelle HAJA(Signification: Nourriture, travail, difficulté):
+
+\[
+\begin{pmatrix}
+a_{13}\\
+a_{23}\\
+a_{33}\\
+a_{43}
+\end{pmatrix}
+\]
+
+La quatrième colonne s'appelle HAKY(Signification: Dieux, Créateur, Argent):
+
+\[
+\begin{pmatrix}
+a_{14}\\
+a_{24}\\
+a_{34}\\
+a_{44}
+\end{pmatrix}
+\]
+
+La cinquième colonne s'appelle SOROTA(Signification: Vieil homme, dirigeant):
+
+\[
+\begin{pmatrix}
+a_{15}\\
+a_{25}\\
+a_{35}\\
+a_{45}
+\end{pmatrix}
+\]
+
+La sixième colonne s'appelle SELY(Signification: Vieille Femme, peuple, journal, marché):
+
+\[
+\begin{pmatrix}
+a_{16}\\
+a_{26}\\
+a_{36}\\
+a_{46}
+\end{pmatrix}
+\]
+
+La septième colonne s'appelle SAFARY(Signification: Route, pied, chemin):
+
+\[
+\begin{pmatrix}
+a_{17}\\
+a_{27}\\
+a_{37}\\
+a_{47}
+\end{pmatrix}
+\]
+
+La huitième colonne s'appelle KIBA(Signification: Maison de logement de TALE):
+
+\[
+\begin{pmatrix}
+a_{18}\\
+a_{28}\\
+a_{38}\\
+a_{48}
+\end{pmatrix}
+\]
+
+\subsubsection{Principe de calcul en sikidy}
+
+En sikidy, $1+1 = 2+2 = 2$, $2+1 = 1+2 = 1$. Si la somme des éléments d'un figure de sikidy est pairs ce figure est un "Andrian'tsikidy(Souverain du Sikidy)" sinon c'est un "Andevon'tsikidy(Esclave du Sikidy)", exemple $ \begin{pmatrix}
+1 \\
+2 \\
+1 \\
+2
+\end{pmatrix} $ dont la somme des éléments est: 1+2+1+2 = 6, donc c'est un souverain de Sikidy.
+
+\subsubsection{Mis en place des 8 filles du sikidy}
+
+Fahasivy = Alisay + Fahavalo\newline
+\textbf{Exemple:} si Alisay est Alohotsy:$ \begin{pmatrix}
+2\\
+1\\
+2\\
+1
+\end{pmatrix} $, et Fahavalo Adabara: $ \begin{pmatrix}
+2\\
+2\\
+1\\
+1
+\end{pmatrix} $, alors Fahasivy, c'est: $ \begin{pmatrix}
+2\\
+1\\
+2\\
+1
+\end{pmatrix} $+$ \begin{pmatrix}
+2\\
+2\\
+1\\
+1
+\end{pmatrix} $ = $ \begin{pmatrix}
+2\\
+1\\
+1\\
+2
+\end{pmatrix} $ \newline \newline \newline \newline
+
+Haja = Fianaha + Abily\newline
+Ombiasa = Fahasivy + Haja\newline 
+Sorota = Fahatelo + Bilady \newline
+Safary = Tale + Maly \newline
+Sely = Sorota + Safary \newline
+Haky = Sely + Ombiasa \newline
+Kiba = Haky + Tale \newline
+
+\subsubsection{Les "rohin'tany(Position)" du Sikidy}
+
+\textbf{\textit{Ceux de l'est(atsinanana):}} \newline
+Adabara, Alatsimay, Alaimora \newline \newline
+\textbf{\textit{Ceux de l'ouest(andrefana):}} \newline 
+Alikisy, Alakaosy, Alokola, Alohotsy, Alakarabo \newline \newline
+\textbf{\textit{Ceux du nord(avaratra):}} \newline 
+Alibiavotra, Renilaza, Adalo, Karija \newline \newline
+\textbf{\textit{Ceux du sud(atsimo):}} \newline 
+Asombola, Taraiky, Alimizanda, Alahasaty 
+
+\section{Lecture du Sikidy}
+\textbf{Remarque important:} les TALE, MALY, ..., OMBIASA, ...,KIBA sont appelé "MAISON"(Trano) du figure de sikidy
+
+\begin{description}
+\item[Pour une question qui devrait être répondu par "OUI" ou par "NON":] Si la figure de TALE et la même que la figure de MALY, alors la réponse à la question est OUI, cette égalité de figure entre le TALE et le MALY est appelé "TOBE"; Par contre deux figures opposé de sikidy est appelé "RELIOSITRA", et deux figures de sikidy est dit opposé si lorsqu'on les sommes ils donnent la figure "TARAIKY", exemple, adalo: $ \begin{pmatrix}
+1\\
+2\\
+1\\
+2
+\end{pmatrix} $ et alohotsy: $ \begin{pmatrix}
+2\\
+1\\
+2\\
+1
+\end{pmatrix} $ sont opposé car, $ \begin{pmatrix}
+1\\
+2\\
+1\\
+2
+\end{pmatrix} $ + $ \begin{pmatrix}
+2\\
+1\\
+2\\
+1
+\end{pmatrix} $ = $ \begin{pmatrix}
+1\\
+1\\
+1\\
+1
+\end{pmatrix} $, et si la figure de MALY et TALE sont RELIOSITRA alors la réponse à la question est NON.
+
+\item[Rôle de la position pour les réponse au question: ]toutes maison qui ont même position ou qui ont des positions famille(sud et est sont familles et nord et ouest sont famille) sont interprété ensembles.\newline
+\textbf{Exemple:}\newline
+MÈRE:\[
+\begin{pmatrix}
+1 & 2 & 2 & 1 \\
+2 & 1 & 1 & 1 \\
+1 & 1 & 2 & 1 \\
+1 & 1 & 1 & 1 
+\end{pmatrix}
+\]
+8 FILLES:
+\[
+\begin{pmatrix}
+2 & 2 & 2 & 2 & 1 & 2 & 1 & 1\\
+1 & 2 & 1 & 1 & 1 & 1 & 2 & 2\\
+2 & 1 & 1 & 2 & 2 & 1 & 1 & 1\\
+2 & 1 & 1 & 1 & 2 & 2 & 2 & 2
+\end{pmatrix}
+\]
+
+\textbf{Lecture: }\newline
+TALE et MALY ne sont ni TOBE ni RELIOSITRA, donc on ne peut pas répondre immédiatement par OUI ou par NON ici. \newline
+Les maisons de même position ou de position famille sont: \newline
+\textbf{SUD:} TALE, FAHAVALO, SOROTA, interprétation: TALE(celui qui consulte le sikidy)= taraiky(retard, courte, petite, minuscule); FAHAVALO(Les problèmes et les ennemis)= taraiky(retard, courte, petite, minuscule); SOROTA(Vieil Homme, Représentant de l'autorité)= Alahasaty(Combat, Militaire, guerre, Conflit), donc pour l’interprétation il nous faut formuler une phrase à partir de ces ensembles de mots, "L'homme consultant a un très grave problème puisque TALE et FAHAVALO sont TOBE(même figure), et ce problème est provoqué par un homme qui a une forte autorité vis à vis du TALE dont le problème est de type conflit(Alahasaty). TALE se sent insignifiant en raison du fait qu'il soit "TARAIKY"".\newline
+En interprète de la même façon tous ceux qui sont de la même famille en position.
+
+\subsubsection{les INTO du sikidy}
+On appelle INTO, le seul a être d'une position donné dans un sikidy, on a un INTO est, si la figure d'une maison est la seule a être de position est dans le sikidy(de tous l'ensemble mère, filles), on défini de la même façon les INTO ouest, sud et nord.\newline
+À noter: Les INTOs sont les sources principal de problème si TALE et FAHAVALO sont de la même famille en position, par contre si TALE et FAHAVALO ne sont pas de la même famille en position les INTOs représente la bénédiction         
+  
+\end{description}
+
+
+
+\end{document}

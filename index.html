@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Sikidy
+        </title>
+        <link href="css/bootstrap.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container">  
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h2 class="text text-primary"> Sikidy </h2>
+                    <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">On peut introduire manuellement la mère du sikidy en écrivant des "1" ou des "2" dans les 16 zones de saisis</h3>
+                            </div>
+                                <table class="table">
+                                    <tr>
+                                        <th class="text text-center">4</th>
+                                        <th class="text text-center">3</th>
+                                        <th class="text text-center">2</th>
+                                        <th class="text text-center">1</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="text text-center" type="text" id="r4n1" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r3n1" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r2n1" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r1n1" value="" size="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="text text-center" type="text" id="r4n2" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r3n2" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r2n2" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r1n2" value="" size="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="text text-center" type="text" id="r4n3" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r3n3" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r2n3" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r1n3" value="" size="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="text text-center" type="text" id="r4n4" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r3n4" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r2n4" value="" size="3"></td>
+                                        <td><input class="text text-center" type="text" id="r1n4" value="" size="3"></td>
+                                    </tr>
+                                </table>
+                          </div>
+                            <button class="btn btn-danger btn-lg btn-block" onclick="generateInput()">générer automatiquement la mère</button>
+                            <button class="btn btn-primary btn-lg btn-block" onclick="transformInput(false)">générer les 8 filles</button>
+                            <button class="btn btn-success btn-lg btn-block" onclick="transformInput(true)">générer les 8 filles (Sous-forme de trait)</button>
+                            <p id="infos"></p>                                
+                            <p id="orientation_status"></p>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                            <table class="table table-bordered table-stripped table-hover" id="result">
+                                <tr id="title"></tr>
+                                <tr id="n1"></tr>
+                                <tr id="n2"></tr>
+                                <tr id="n3"></tr>
+                                <tr id="n4"></tr>
+                                <tr id="data_sup"></tr>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="Game.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+    </body>
+</html>
